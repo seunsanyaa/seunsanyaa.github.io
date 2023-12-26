@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="is-preload">
+      <!-- Header -->
+      <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero"><h1><span>IOT</span> and <span>Cyber</span>Security</h1></a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger"><div class="bar"></div></div>
+              <ul>
+                <li><a href="index.html" data-after="Home">Home</a></li>
+                <li><a href="index.html" data-after="About">About</a></li>
+                <li><a href="#wrapper" data-after="course">Projects</a></li>
+                <li><a href="index.html" data-after="contact">Contact</a></li>
+                <li><a href="iot.html" data-after="About">IOT</a></li>
+                <li><a href="cyber.html" data-after="cybersecurity">Cyber</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  <!-- End Hea
+   <!-- Hero Section  -->
+   <section id="hero4" class="lazy-bg" data-src="./images/activity2.jpg">
+    <div class="hero container">
+      <div>
+        <h1>Scanning <span></span></h1>
+        <h1>Activity 2 <span></span></h1>
+        <a href="#wrapper" type="button" class="cta">Projects</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+    <div id="wrapper">
+      <article class="post featured">
+          <header class="major">
+<section class="posts">
+  <article>
+  <p>Using the website assigned in unit 1, I carried out the following exercises and answered the questions listed below:</p>
+  <header>
+      <h3 align="left">The questions are listed below:</h3>
+  </header>
+  <div class="">
+   <div class="col-7 col-12-small">
+          <li style="">How many hops from your machine to your assigned website?</li>
+          <li style="">Which step causes the biggest delay in the route? </li>
+          <li style="">what is the average duration of that delay?</li>
+          <li style="">What are the main nameservers for the website?</li>
+          <li style="">Who is the registered contact?</li>
+          <li style="">What is the MX record for the website?</li>
+          <li style="">Where is the website hosted? </li>
+ 
+   </div>
+   </div>
+      </article>
+  <article>
+      <header>
+          <h3 align="left">How many hops from your machine to your assigned website?</h3>
+      </header>
+      <header>
+       <h3 align="left">traceroute</h3>
+       </header>
+          <p>I used traceroute to get the number of hops on the website, “emu.edu.tr”, and got this result.</p>
+          <img src="images/traceroute.jpg" alt="" class="imagesmall" ><br><br>
+  </article>
+<article> <br>
+          <header>
+              <h3 align="left">Which step causes the biggest delay in the route? What is the average duration of that delay?</h3>
+          </header>
+       <header>
+           <h3 align="left">What are the main nameservers for the website?</h3>
+           <h3 align="left">nslookup</h3>
+       </header>
+          <p>
+           The main nameservers for the website, “emu.edu.tr”,  using , “+short NS emu.edu.tr nslookup”, are as follows: </p>
+           <div class="row">
+               <div class="col-7 col-12-small">
+           <ul >
+               <li>ns1.emu.edu.tr</li><br>
+               <li>ns2.emu.edu.tr</li>
+           </ul> 
+               </div>
+           </div>
+</article>
+<article>
+<header>
+   <h3 align="left">Who is the registered contact?</h3>
+</header>
+<p>
+To obtain the registered contact, I used the command, “whois emu.edu.tr”, and I got the result as follows:</p>
+<img src="images/whois.JPG" alt="" class="> <br><br>
+</article>
+<article>
+<header>
+   <h3 align="left">What is the MX record for the website?</h3>
+</header>
+<p>
+   The MX record for the website was gotten using, “nslookup -type=mx google.com”, the results are as follows:
+</p>
+<img src="images/nslookup2.JPG" alt="" class="imagesmall" ><br><br>
+</article>
+<article>
+<header>
+   <h3 align="left">Where is the website hosted?</h3>
+   <img src="images/whoisIP1.JPG" class="imagesmall" ><br><br>
+   <img src="images/whoisIP3.JPG" class="imagesmall" ><br><br>
+</header>
+</article>
+</section>
+ 
+  </div>
+  </div>
+
+
+<!-- Footer -->
+<section id="footer">
+  <div class="footer container">
+    <div class="brand"><h1><span>S</span>e<span>u</span>n</h1></div>
+    <h2>IOT and CyberSecurity</h2>
+    <div class="social-icon">
+      <div class="social-item">
+        <a href="https://www.facebook.com/profile.php?id=seunsanyaa"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+      </div>
+      <div class="social-item">
+        <a href="https://www.instagram.com/seunsanyaa/?hl=en"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+      </div>
+      <div class="social-item">
+        <a href="https://twitter.com/seunsanyaa"><img src="https://img.icons8.com/?size=512&id=108650&format=png"/></a>
+      </div>
+      <div class="social-item">
+        <a href="https://www.linkedin.com/in/seunsanyaa"><img src="https://img.icons8.com/?size=512&id=108812&format=png"/></a>
+      </div>
+    </div>
+    <p>Copyright © 2023 seun. All rights reserved</p>
+  </div>
+</section>
+  <!-- End Footer -->    
+  <script src="./main.js"></script>
+
+</body>
+</html>

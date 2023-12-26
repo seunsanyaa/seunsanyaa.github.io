@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="is-preload">
+      <!-- Header -->
+      <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>IOT</span> and <span>Cyber</span>Security</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="index.html" data-after="About">About</a></li>
+            <li><a href="#wrapper" data-after="course">Activities</a></li>
+            <li><a href="index.html" data-after="contact">Contact</a></li>
+            <li><a href="iot.html" data-after="iot">IOT</a></li>
+            <li><a href="cyber.html" data-after="cybersecurity">Cyber</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+  <!-- End Header -->
+   <!-- Hero Section  -->
+   <section id="hero5" class="lazy-bg" data-src="./images/wind.jpg">
+    <div class="hero container">
+      <div>
+        <h1>Solar Winds Breach <span></span></h1>
+        <h1>Activity 3 <span></span></h1>
+        <a href="#wrapper" type="button" class="cta">Projects</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+    <div id="wrapper" class="fade-in">
+        <div id="main">
+            <article class="post featured">
+                <header class="major">
+    <section class="posts">
+        <article>
+        <p>We were given the links provided below to study in order to answer the questions that were given:</p>
+        <b><a href="https://text.npr.org/985439655">https://text.npr.org/985439655</a> </b><br>
+        <b><a href="http://gauss.ececs.uc.edu/Project4/Documents/kill-chain.pdf">http://gauss.ececs.uc.edu/Project4/Documents/kill-chain.pdf</a> </b><br><br><br>
+        <header>
+            <h3 align="left">The questions are listed below:</h3>
+        </header>
+                <li style="">Create a table that analyses the solar winds exploit using the Cyber Kill
+                 Chain. Are there any phases that you cannot identify?
+                 </li>
+                <li style="">Create a list of possible mitigations for each phase. Are there any phases you
+                 cannot mitigate?
+                 </li>
+                <li style="">What tools would you utilise in each phase? Give reasons for your answer.</li>
+                <li style="">Create a slide deck presentation with up to 4 slides that discuss your solution.</li>
+            <header>
+                <h3 align="left">Create a table that analyses the solar winds exploit using the Cyber Kill
+                 Chain. Are there any phases that you cannot identify?</h3>
+            </header>
+            <h2>SolarWinds Exploit Analysis</h2>
+            <div class="table-wrapper">
+             <table class="alt">
+                 <thead>
+                     <tr>
+                         <th>Phase</th>
+                         <th>Description</th>
+                         <th>Identification Status</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>Reconnaissance</td>
+                         <td>The attackers likely conducted extensive reconnaissance to identify potential targets and gather information.</td>
+                         <td>Identified</td>
+                     </tr>
+                     <tr>
+                         <td>Weaponization</td>
+                         <td>The attackers weaponized the SolarWinds software update with a malicious backdoor (SUNBURST) before distribution.</td>
+                         <td>Identified</td>
+                     </tr>
+                     <tr>
+                         <td>Delivery</td>
+                         <td> The weaponized update was delivered to SolarWinds' customers through legitimate software update channels.</td>
+                         <td>Identified</td>
+                     </tr>
+                     <tr>
+                         <td>Exploitation</td>
+                         <td>Once the malicious update was installed, the backdoor exploited vulnerabilities and established a foothold.</td>
+                         <td>Identified</td>
+                     </tr>
+                     <tr>
+                         <td>Installation</td>
+                         <td>The attackers established persistence on the compromised systems using the backdoor.</td>
+                         <td>Identified</td>
+                     </tr>
+                     <tr>
+                         <td>Command and Control, C2</td>
+                         <td>OThe attackers set up communication channels to remotely control the compromised systems</td>
+                         <td>Identified</td>
+                     </tr>
+                     <tr>
+                         <td>Actions on Objectives</td>
+                         <td>The ultimate goals of the attackers may have included data exfiltration, further lateral movement, etc.</td>
+                         <td>Identified</td>
+                     </tr>
+                 </tbody>
+             </table>
+         </div><br>
+                <header>
+                    <h3 align="left">Create a list of possible mitigations for each phase. Are there any phases you cannot mitigate?</h3>
+                </header>
+                <ol style="float:left;">
+                 <li><b>Reconnaissance:</b></li>
+                 <ul style="float:left;">
+                     <li style="float:left;">Implement strict access controls on sensitive information.</li>
+                     <li style="float:left;">Monitor and analyze external information requests.</li>
+                     <li style="float:left;">Educate employees about the risks of oversharing information online.</li>
+                 </ul>
+                 <li><b>Weaponization:</b></li>
+                 <ul style="float:left;">
+                     <li style="float:left;">Employ email filtering to detect and block malicious attachments.</li>
+                     <li style="float:left;">Keep software and applications up-to-date with the latest security patches.</li>
+                     <li style="float:left;">Implement endpoint protection solutions to detect and prevent malware.</li>
+                 </ul>
+                 <li><b>Delivery:</b></li>
+                 <ul style="float:left;">
+                     <li style="float:left;">Employ email security solutions to detect and block phishing emails.</li>
+                     <li style="float:left;">Use content filtering to block malicious websites.</li>
+                     <li style="float:left;">Implement multi-factor authentication (MFA) for critical systems.</li>
+                 </ul>
+                 <li><b>Exploitation:</b></li>
+                 <ul style="float:left;">
+                     <li style="float:left;">Regularly patch and update software to address known vulnerabilities.</li>
+                     <li style="float:left;">Employ intrusion detection/prevention systems (IDS/IPS) to detect and block suspicious activities.</li>
+                     <li style="float:left;">Utilize application whitelisting to allow only approved programs to run.</li>
+                 </ul>
+                 <li><b>Installation:</b></li>
+                 <ul style="float:left;">
+                     <li style="float:left;">Implement robust endpoint security solutions to detect and remove malware.</li>
+                     <li style="float:left;">Conduct regular security audits and penetration testing.</li>
+                     <li style="float:left;">Employ host-based firewalls to limit inbound and outbound traffic.</li>
+                 </ul>
+                 <li><b>Command and Control (C2):</b></li>
+                 <ul style="float:left;">
+                     <li style="float:left;">Utilize network monitoring tools to detect anomalous traffic patterns.</li>
+                     <li style="float:left;">Implement network segmentation to limit lateral movement.</li>
+                     <li style="float:left;">Employ threat intelligence feeds to identify known C2 servers.</li>
+                 </ul>
+                 <li><b>Actions on Objectives:</b></li>
+                 <ul style="float:left;">
+                     <li style="float:left;">Implement data loss prevention (DLP) solutions to monitor and prevent unauthorized data exfiltration.</li>
+                     <li style="float:left;">Conduct regular security awareness training for employees to recognize and report suspicious activity.</li>
+                     <li style="float:left;">Employ advanced threat hunting techniques to proactively identify and respond to threats.
+                     </li>
+                 </ul>
+             </ol>
+             <header>
+                 <h3 align="left">What tools would you utilise in each phase? Give reasons for your answer.</h3>
+             </header>
+          <ol style="float:left;">
+             <li><b>Reconnaissance:</b></li>
+             <ul style="float:left;">
+                 <li style="float:left;">Shodan and Censys: These are search engines for internet-connected devices. They can be used to identify potential targets by searching for specific software or services that may be vulnerable.</li>
+             </ul>
+             <li><b>Weaponization:</b></li>
+             <ul style="float:left;">
+                 <li style="float:left;">Metasploit: A widely-used penetration testing framework that can be used to create, test, and execute exploits. In the SolarWinds exploit, attackers weaponized a legitimate software update, so specialized tools were not necessary for this phase.</li>
+             </ul>
+             <li><b>Delivery:</b></li>
+             <ul style="float:left;">
+                 <li style="float:left;">Email Security Gateways (e.g., Proofpoint, Mimecast): These solutions filter inbound emails for malicious content and attachments. They can detect and prevent phishing emails, including those delivering weaponized payloads.</li>
+             </ul>
+             <li><b>Exploitation:</b></li>
+             <ul style="float:left;">
+                 <li style="float:left;">Exploit Kits (e.g., Angler, Rig): In the case of a different type of exploit, exploit kits can be used to deliver and execute malicious payloads on vulnerable systems. However, in the SolarWinds exploit, the exploitation occurred through the compromised software update, making the use of specialized exploitation tools unnecessary.</li>
+             </ul>
+             <li><b>Installation:</b></li>
+             <ul style="float:left;">
+                 <li style="float:left;">Endpoint Protection Platforms (EPP): Solutions like CrowdStrike, Symantec, and others are used to protect endpoints from malware and other security threats. They can detect and remove malicious software, including the backdoor installed in the SolarWinds exploit.</li>
+             </ul>
+             <li><b>Command and Control (C2):</b></li>
+             <ul style="float:left;">
+                 <li style="float:left;">Network Monitoring Tools (e.g., Wireshark, Suricata): These tools can be used to monitor network traffic for unusual patterns or connections to known malicious domains. This can help identify and block communication channels established by the attacker.</li>
+             </ul>
+             <li><b>Actions on Objectives:</b></li>
+             <ul style="float:left;">
+                 <li style="float:left;">Data Loss Prevention (DLP) solutions (e.g., Symantec DLP, McAfee DLP): DLP tools monitor and prevent unauthorized data exfiltration. They can be configured to detect and block the unauthorized transfer of sensitive information.</li>
+             </ul>
+         </ol>
+                <header>
+                    <h3 align="left">Create a slide deck presentation with up to 4 slides that discuss your solution. </h3>
+                </header>
+                <p>
+                    Primarily, executives must recognise cyber security as a crucial component of their enterprise, akin to ensuring that their workplace is secured after hours (Almeida et al., 2020; Spremić &amp; Šimunic, 2018).
+                     Because they haven't previously been exposed to cyber security threats, industries that are new to digitalization face unknown challenges (Almeida et al., 2020). Hackers discovered new vulnerabilities in cars 
+                     as they integrated more digital components, endangering the integrity of those systems (Spremić &amp; Šimunic, 2018). A McKinsey and Company study estimates that the majority of contemporary cars contain 100 million lines of code;
+                      in the next ten years, this number is predicted to triple (Deichmann et al., 2019). 
+                </p>
+    </article>
+    </section>
+        </header></article></div>
+    </div>
+
+
+<!-- Footer -->
+<section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>S</span>e<span>u</span>n</h1></div>
+      <h2>IOT and CyberSecurity</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/profile.php?id=seunsanyaa"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/seunsanyaa/?hl=en"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/seunsanyaa"><img src="https://img.icons8.com/?size=512&id=108650&format=png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/seunsanyaa"><img src="https://img.icons8.com/?size=512&id=108812&format=png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 seun. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->    
+  <script src="./main.js"></script>
+
+</body>
+</html>
